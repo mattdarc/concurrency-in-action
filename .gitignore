@@ -1,0 +1,5 @@
+/build
+/.ccls-cache
+/.vim
+/.gdb_history
+/compile_commands.json
