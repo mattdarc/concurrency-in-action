@@ -12,7 +12,7 @@ add_link_options(-ljemalloc -lpthread)
 add_executable(TestThreadPool HybridMutex.cpp ThreadPool.cpp TestThreadPool.cpp)
 target_link_libraries(TestThreadPool ${LD_COMMON_FLAGS})
 
-find_package(benchmark REQUIRED PATHS $ENV{HOME}/benchmark/build)
+find_package(benchmark REQUIRED)
 
 add_executable(bench bench.cpp HybridMutex.cpp ThreadPool.cpp)
 target_include_directories(bench PRIVATE benchmark::benchmark)
